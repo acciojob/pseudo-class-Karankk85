@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+/* Styling the main container */
+#container {
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #000;
+    display: inline-block;
+}
+
+/* Pseudo-element for adding content before the container */
+#container::before {
+    content: "Special Text Before ";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Pseudo-element for adding content after the container */
+#container::after {
+    content: " Special Text After";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    font-weight: bold;
+}
